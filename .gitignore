@@ -46,4 +46,4 @@ amplifytools.xcconfig
 .idea
 
 # Do not commit service endpoint & stream key
-./OBS/amplifylivestream/service.json
+/OBS/amplifylivestream/service.json
