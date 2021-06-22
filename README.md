@@ -57,6 +57,8 @@ to Amplify app to automatically set up CI/CD via AWS CodeBuild & AWS CodeDeploy.
 
 Then merge `.gitignore`, rename react `README.md` to `React--README.md` & move all React app contents to root folder.
 
+`yarn start` to run the React App (currently streams a hard-coded VOD file from JWPlayer)
+
 ## Video Setup ##
 
 ` npm install -g amplify-category-video`
