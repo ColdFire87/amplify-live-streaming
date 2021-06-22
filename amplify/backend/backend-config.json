@@ -1,1 +1,9 @@
-{}
+{
+  "video": {
+    "amplifylivestream": {
+      "service": "video",
+      "serviceType": "livestream",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}
