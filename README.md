@@ -99,3 +99,13 @@ This will stream live video to AWS Cloud (ingested via `MediaLive` using RTMP pr
 
 You can see the live video stream using the [JWPlayer Stream Tester](https://developer-tools.jwplayer.com/stream-tester/)
 (enter your `MediaStore` URL - ` https://**********.data.mediastore.eu-west-1.amazonaws.com/p/index.m3u8`).
+
+## Cleanup ##
+
+```bash
+# Verify what resources are deployed on aws
+amplify status
+
+# Remove all deployed resources
+amplify delete
+```
