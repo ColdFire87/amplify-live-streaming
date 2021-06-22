@@ -54,3 +54,28 @@ to Amplify app to automatically set up CI/CD via AWS CodeBuild & AWS CodeDeploy.
 `npx create-react-app amplify-live-streaming`
 
 Then merge `.gitignore`, rename react `README.md` to `React--README.md` & move all React app contents to root folder.
+
+## Video Setup ##
+
+` npm install -g amplify-category-video`
+
+```bash
+# Add video to Amplify App
+#   - AWS Elemental Live Stream
+#   - RTMP_PUSH
+#   - Full (6 renditions)
+#   - Auto Start: Yes
+#   - MediaStore
+amplify add video
+
+# Verify what resources will be created on aws
+amplify status
+
+# Deploy (CloudFormation via AWS CDK)
+amplify push
+```
+
+To get live stream info (`MediaLive` & `MediaStore` endpoints): `amplify video get-info`.
+- `MediaLive` is used for video ingestion via `RTMP` protocol
+- `MediaStore` is used for video stream retrieval via `HLS/DASH` protocols
+- Transcoding is done via `AWS Elemental`
