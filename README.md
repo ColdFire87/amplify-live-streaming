@@ -46,4 +46,11 @@ cd amplify-live-streaming
 amplify init
 ```
 
-To open Amplify Console: `amplify console` (select `Console`, not `Admin UI`)
+To open Amplify Console: `amplify console` (select `Console`, not `Admin UI`), then link the GitHub repo
+to Amplify app to automatically set up CI/CD via AWS CodeBuild & AWS CodeDeploy.
+
+## React App ##
+
+`npx create-react-app amplify-live-streaming`
+
+Then merge `.gitignore`, rename react `README.md` to `React--README.md` & move all React app contents to root folder.
