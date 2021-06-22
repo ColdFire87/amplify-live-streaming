@@ -44,3 +44,6 @@ amplifytools.xcconfig
 
 # JetBrains project files
 .idea
+
+# Do not commit service endpoint & stream key
+./OBS/amplifylivestream/service.json
